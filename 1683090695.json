@@ -22,8 +22,23 @@
             ]
         },
         {
-            "description": "Map Control + I to Enter",
+            "description": "Map Control + I or J to Enter",
             "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        },
+                        "key_code": "j"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                },
                 {
                     "type": "basic",
                     "from": {
