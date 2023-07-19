@@ -1,0 +1,275 @@
+{
+    "title": "Map Left Option + Spacebar to Enter",
+    "rules": [
+        {
+            "description": "Map Left Option + Spacebar to Enter",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["left_alt"]
+                        },
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Control + I or J to Enter",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control"],
+                            "optional": ["any"]
+                        },
+                        "key_code": "j"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control"],
+                            "optional": ["any"]
+                        },
+                        "key_code": "i"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Cmd + L to Control + L",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control"]
+                        },
+                        "key_code": "l"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "l",
+                            "modifiers": ["command"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Control + Command + pn to PageUP or PageDown",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "command"]
+                        },
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "page_up"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "command"]
+                        },
+                        "key_code": "n"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "page_down"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Shift + Control + pnfb  to Shift + Control + pnfb",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "shift"]
+                        },
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "up_arrow",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "shift"]
+                        },
+                        "key_code": "n"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "down_arrow",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "shift"]
+                        },
+                        "key_code": "f"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "right_arrow",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "pfrom": {
+                        "modifiers": {
+                            "mandatory": ["control", "shift"]
+                        },
+                        "key_code": "b"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "left_arrow",
+                            "modifiers": ["shift"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Control + Option + pnfb  to Option + arrow or PageUp or PageDown",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "left_option"]
+                        },
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "page_up"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "left_option"]
+                        },
+                        "key_code": "n"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "page_down"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "left_option"]
+                        },
+                        "key_code": "f"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "right_arrow",
+                            "modifiers": ["left_option"]
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "left_option"]
+                        },
+                        "key_code": "b"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "left_arrow",
+                            "modifiers": ["left_option"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "Map Control + Option + H  to BackSpace + Option",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "modifiers": {
+                            "mandatory": ["control", "left_option"]
+                        },
+                        "key_code": "h"
+                    },
+                    "to": [
+                        {
+                            "repeat": true,
+                            "key_code": "delete_or_backspace",
+                            "modifiers": ["left_option"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
